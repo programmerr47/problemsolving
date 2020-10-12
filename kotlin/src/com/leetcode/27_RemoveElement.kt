@@ -1,6 +1,6 @@
 package com.leetcode
 
-class Solution27 {
+private class Solution27 {
     fun removeElement(nums: IntArray, `val`: Int): Int {
         var end = nums.lastIndex
         var cur = 0

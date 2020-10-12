@@ -3,7 +3,7 @@ package com.leetcode
 import kotlin.math.min
 
 //Partial sum vector. Time: O(n*m). Space: O(m)
-class Solution64 {
+private class Solution64 {
     fun minPathSum(grid: Array<IntArray>): Int {
         val waveGrid = IntArray(grid[0].size)
 
@@ -22,7 +22,7 @@ class Solution64 {
 }
 
 //Partial sum matrix. Time: O(n*m). Space: O(n*m)
-class Solution64old1 {
+private class Solution64old1 {
     fun minPathSum(grid: Array<IntArray>): Int {
         val waveGrid = Array(grid.size) { IntArray(grid[it].size) }
 

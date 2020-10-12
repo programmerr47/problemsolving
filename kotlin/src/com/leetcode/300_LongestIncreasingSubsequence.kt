@@ -3,7 +3,7 @@ package com.leetcode
 import java.lang.Integer.max
 
 //DP, array of max subsequence ending by array[i]. Time: O(n^2). Space: O(n)
-class Solution300 {
+private class Solution300 {
     fun lengthOfLIS(nums: IntArray): Int {
         val counts = IntArray(nums.size)
         var countMax = 0

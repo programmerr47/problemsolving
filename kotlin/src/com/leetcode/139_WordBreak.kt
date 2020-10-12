@@ -1,6 +1,6 @@
 package com.leetcode
 
-class Solution139 {
+private class Solution139 {
     fun wordBreak(s: String, wordDict: List<String>): Boolean {
         val wordSet = wordDict.toHashSet()
         val possible = BooleanArray(s.length) //possible[i] = can split substring [0, i] on words

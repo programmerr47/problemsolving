@@ -118,7 +118,7 @@ private class Solution1314 {
 }
 
 //Sliding window O(n * m * k)
-class Solution1314old2 {
+private class Solution1314old2 {
     fun matrixBlockSum(mat: Array<IntArray>, k: Int): Array<IntArray> {
         val result = Array(mat.size) { IntArray(mat[it].size) }
         var prevRes = 0
@@ -206,7 +206,7 @@ class Solution1314old2 {
 }
 
 //Straight solution: O(n * m * (k^2))
-class Solution1314old1 {
+private class Solution1314old1 {
     fun matrixBlockSum(mat: Array<IntArray>, k: Int): Array<IntArray> {
         val result = Array(mat.size) { IntArray(mat[it].size) }
 

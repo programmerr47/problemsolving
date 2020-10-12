@@ -3,7 +3,7 @@ package com.leetcode
 import java.lang.Integer.min
 
 //DP, but we assume the we have natural numbers. Time: O(n), Space:  O(n), where n - is a total amount of numbers
-class Solution120 {
+private class Solution120 {
     fun minimumTotal(triangle: List<List<Int>>): Int {
         val buffer = IntArray(triangle.size)
 
@@ -26,7 +26,7 @@ class Solution120 {
 }
 
 //Recursion. Will not good for big data. Time: O(2^n), Space:  O(n), where n - is a total amount of rows
-class Solution120old {
+private class Solution120old {
     fun minimumTotal(triangle: List<List<Int>>): Int = find(triangle, 0, 0, 0)
 
     private fun find(triangle: List<List<Int>>, i: Int, j: Int, sum: Int): Int {

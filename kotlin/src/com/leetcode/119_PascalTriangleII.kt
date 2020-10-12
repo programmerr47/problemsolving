@@ -1,6 +1,6 @@
 package com.leetcode
 
-class Solution119 {
+private class Solution119 {
     fun getRow(rowIndex: Int): List<Int> {
         val result = ArrayList<Int>(rowIndex + 1).apply {
             repeat(rowIndex + 1) { add(0) }

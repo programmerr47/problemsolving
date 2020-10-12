@@ -17,7 +17,7 @@ class TreeZigZagNode(var value: Int) {
 }
 
 //DFS. Time: O(n). Space: O(log(n))
-class Solution1372 {
+private class Solution1372 {
     fun longestZigZag(root: TreeNode?): Int = find(root, true, 0)
 
     private fun find(node: TreeNode?, isLeft: Boolean, count: Int): Int {
@@ -30,7 +30,7 @@ class Solution1372 {
 }
 
 //BFS in case if the tree is very deep. Time: O(n). Space: O(n)
-class Solution1372Old1 {
+private class Solution1372Old1 {
     fun longestZigZag(root: TreeNode?): Int =
         root?.findMax() ?: 0
 

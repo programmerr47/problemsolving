@@ -5,7 +5,7 @@ import kotlin.contracts.InvocationKind
 import kotlin.contracts.contract
 import kotlin.system.measureNanoTime
 
-class Solution22 {
+private class Solution22 {
     fun generateParenthesis(n: Int): List<String> =
             ArrayList<String>().also { generate(it, "", 0, 0, n) }
 

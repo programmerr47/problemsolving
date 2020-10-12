@@ -2,7 +2,7 @@ package com.leetcode
 
 import kotlin.math.abs
 
-class Solution16 {
+private class Solution16 {
     fun threeSumClosest(nums: IntArray, target: Int): Int {
         val sorted = nums.sorted()
         var result = sorted[0] + sorted[1] + sorted[2]

@@ -2,7 +2,7 @@ package com.leetcode
 
 import java.util.*
 
-class Solution20 {
+private class Solution20 {
     fun isValid(s: String): Boolean {
         val list = LinkedList<Char>()
         s.forEachIndexed { i, char ->

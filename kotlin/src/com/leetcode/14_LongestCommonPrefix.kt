@@ -1,6 +1,6 @@
 package com.leetcode
 
-class Solution14 {
+private class Solution14 {
     fun longestCommonPrefix(strs: Array<String>): String {
         return buildString {
             strs.firstOrNull()?.forEachIndexed { i, char ->
