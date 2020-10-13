@@ -47,5 +47,5 @@ private class Solution496Stack {
 }
 
 fun main() {
-    println(Solution496Stack().nextGreaterElement(arrayOf(4, 1, 2), arrayOf(1, 3, 4, 2)).joinToString())
+    println(Solution496Stack().nextGreaterElement(intArrayOf(4, 1, 2), intArrayOf(1, 3, 4, 2)).joinToString())
 }
