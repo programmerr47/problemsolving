@@ -20,7 +20,7 @@ private class Solution22 {
 }
 
 //Works worse than original solution O_o
-object Solution22WithoutStringRebuild {
+private object Solution22WithoutStringRebuild {
     private const val CHAR_EMPTY = ' '
     private const val CHAR_OPEN = '('
     private const val CHAR_CLOSE = ')'
