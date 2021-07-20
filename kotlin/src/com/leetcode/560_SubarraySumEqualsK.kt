@@ -1,6 +1,6 @@
 package com.leetcode
 
-private class Solution {
+private class Solution560 {
     fun subarraySum(nums: IntArray, k: Int): Int {
         val subSums = IntArray(nums.size + 1)
         nums.forEachIndexed { i, num ->
@@ -19,7 +19,7 @@ private class Solution {
 }
 
 fun main() {
-    val solution = Solution()
+    val solution = Solution560()
     println(solution.subarraySum(intArrayOf(1, 2, 3), 3))
     println(solution.subarraySum(intArrayOf(1, 1, 1), 2))
     println(solution.subarraySum(intArrayOf(1, 2, 3, -3), 3))
