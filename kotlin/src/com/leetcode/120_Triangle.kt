@@ -21,7 +21,7 @@ private class Solution120 {
             }
         }
 
-        return buffer.min()!!
+        return buffer.minOrNull()!!
     }
 }
 

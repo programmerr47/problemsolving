@@ -4,7 +4,7 @@ package com.leetcode
 private class Solution238 {
 
     fun productExceptSelf(nums: IntArray): IntArray {
-        val result = IntArray(nums.size).sort()
+        val result = IntArray(nums.size).apply { sort() }
         var mult = 1
 
         for (i in nums.indices) {
