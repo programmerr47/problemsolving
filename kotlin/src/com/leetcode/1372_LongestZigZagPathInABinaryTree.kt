@@ -1,12 +1,8 @@
 package com.leetcode
 
+import com.leetcode.data.TreeNode
 import java.lang.Integer.max
 import java.util.*
-
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
 
 class TreeZigZagNode(var value: Int) {
     var left: TreeZigZagNode? = null
