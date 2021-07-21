@@ -47,7 +47,7 @@ private class Solution222 {
     fun countNodes(root: TreeNode?): Int {
         if (root == null) return 0
 
-        val maxDepth = root.maxDepth()
+        val maxDepth = root.depth()
         val maxCount = (1 shl maxDepth) - 1
 
         var left = 0
@@ -66,17 +66,7 @@ private class Solution222 {
         return maxCount - maxCount / 2 + maxDepthLast
     }
 
-    private fun TreeNode.maxDepth(): Int {
-        var ptr: TreeNode? = this
-        var depth = 0
-        while (ptr != null) {
-            depth++
-            ptr = ptr.left
-        }
-        return depth
-    }
-
-    private fun TreeNode.depth(max: Int, shift: Int): Int {
+    private fun TreeNode.depth(max: Int = 0, shift: Int = 0): Int {
         var ptr: TreeNode? = this
         var depth = 0
         while (ptr != null) {
@@ -160,8 +150,6 @@ fun main() {
             }
         }
     ))
-
-    println(buildCompleteTree(23))
 }
 
 private fun buildCompleteTree(count: Int): TreeNode? {
