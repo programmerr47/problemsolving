@@ -1,6 +1,6 @@
 package com.leetcode
 
-class Solution338 {
+private class Solution338 {
     fun countBits(n: Int): IntArray {
         val result = IntArray(n + 1)
         for (i in 1..n) {
