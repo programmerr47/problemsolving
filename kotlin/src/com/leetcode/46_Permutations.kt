@@ -10,7 +10,13 @@ import kotlin.math.pow
  * Tip:
  * This approach would not work in case of recurrent numbers!
  *
- * Time: O(n!), Space: O(n)
+ * Time: O(n^n) - actually the total number of permutations is n!
+ *                which is less than n^n, but strictly in recursive
+ *                permute call we always going through the whole
+ *                array of nums independently of depth of recursive
+ *                call. Maybe that can be improved somehow to n!,
+ *                but I think this will cost taking more space
+ * Space: O(n)
  */
 private class Solution46 {
     fun permute(nums: IntArray): List<List<Int>> {
